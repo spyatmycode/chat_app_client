@@ -1,0 +1,19 @@
+
+
+export const NODE_ENV = import.meta.env.VITE_ENV
+
+export const DEVELOPMENT_SERVER_BASE_URL = import.meta.env.VITE_DEVELOPMENT_SERVER_BASE_URL
+
+export const PRODUCTION_SERVER_BASE_URL = import.meta.env.VITE_PRODUCTION_SERVER_BASE_URL
+
+export const SERVER_BASE_URL = NODE_ENV === 'development' ? DEVELOPMENT_SERVER_BASE_URL : PRODUCTION_SERVER_BASE_URL
+
+export const GOOGLE_CLIENT_ID= import.meta.env.VITE_GOOGLE_CLIENT_ID
+export const GOOGLE_CLIENT_SECRET=import.meta.env.VITE_GOOGLE_CLIENT_SECRET
+export const GOOGLE_AUTH_REDIRECT_URL=import.meta.env.VITE_GOOGLE_AUTH_REDIRECT_URL
+
+export const GOOGLE_AUTH_TOKEN_URL = import.meta.env.VITE_GOOGLE_AUTH_TOKEN_URL
+
+export const GOOGLE_ROOT_URL = import.meta.env.VITE_GOOGLE_ROOT_URL
+
+
