@@ -1,4 +1,4 @@
-#"Na Akeju dey write but na shali dey shake"
+# `Na Akeju dey write but na shali dey shake`
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
