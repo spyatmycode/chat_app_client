@@ -46,10 +46,12 @@ export const Chats = ({ data }: any) => {
 
                     {
                         data?.map(({ message, position }: any, i: number) => {
-                            const chatColor = position?.toLowerCase() === "end" ? "success" : ""
+                            
+                            const chatColor = position?.toLowerCase() === "end" ? "chat-bubble-success":""
+                            const chatPosition = position?.toLowerCase() === "end" ? "chat-end":"chat-start"
                             return (
-                                <div key={i} className={`chat chat-${position} text-white`}>
-                                    <div className={`chat-bubble text-sm text-gray-100 chat-bubble-${chatColor}`}>{message}</div>
+                                <div key={i} className={`chat ${chatPosition}  text-white`}>
+                                    <div className={`chat-bubble text-sm text-gray-100 ${chatColor}`}>{message}</div>
                                 </div>
                             )
                         })
